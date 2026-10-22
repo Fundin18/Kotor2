@@ -1,0 +1,6 @@
+# Normalize text in Git and use Windows line endings in the working folder.
+* text=auto
+*.txt text eol=crlf
+*.md text eol=crlf
+.gitignore text eol=lf
+.gitattributes text eol=lf
