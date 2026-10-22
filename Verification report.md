@@ -1,6 +1,6 @@
 # KOTOR 2 console reference audit
 
-Updated 2026-10-21: the TXT has now been corrected. The regenerated audit CSV reports 556 matching item mappings, 50 matching warp destinations, and 30 command rows whose names are present in the executable. No item or warp lookup failures remain. Commands have not been tested in a running game.
+Updated 2026-10-21: the TXT has now been corrected and expanded with all 30 global armor underlays (Mark I-V) and all 30 global armor overlays (Mark I-IV). The regenerated audit CSV reports 616 matching item mappings, 50 matching warp destinations, and 30 command rows whose names are present in the executable. No item or warp lookup failures remain. Commands have not been tested in a running game.
 
 The findings and original TXT line numbers below describe the version before correction. The CSV now describes the corrected file; its line numbers supersede these historical references. GitHub and Git history have not been changed.
 

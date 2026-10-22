@@ -250,6 +250,74 @@ giveitem a_heavy_15           - Matrix Armor
 giveitem a_heavy_x01          - Mandalore's Armor
 
 ====================================================================
+ARMOR UNDERLAYS (MARK I-V)
+====================================================================
+giveitem u_a_unde_01          - Environment Underlay Mark I
+giveitem u_a_unde_02          - Biorestorative Underlay Mark I
+giveitem u_a_unde_03          - Armorweave Underlay Mark I
+giveitem u_a_unde_04          - Strengthening Underlay Mark I
+giveitem u_a_unde_05          - Flexible Underlay Mark I
+giveitem u_a_unde_06          - Durasteel Underlay Mark I
+giveitem u_a_unde_07          - Environment Underlay Mark II
+giveitem u_a_unde_08          - Biorestorative Underlay Mark II
+giveitem u_a_unde_09          - Armorweave Underlay Mark II
+giveitem u_a_unde_10          - Strengthening Underlay Mark II
+giveitem u_a_unde_11          - Flexible Underlay Mark II
+giveitem u_a_unde_12          - Durasteel Underlay Mark II
+giveitem u_a_unde_13          - Environment Underlay Mark III
+giveitem u_a_unde_14          - Biorestorative Underlay Mark III
+giveitem u_a_unde_15          - Armorweave Underlay Mark III
+giveitem u_a_unde_16          - Strengthening Underlay Mark III
+giveitem u_a_unde_17          - Flexible Underlay Mark III
+giveitem u_a_unde_18          - Durasteel Underlay Mark III
+giveitem u_a_unde_19          - Environment Underlay Mark IV
+giveitem u_a_unde_20          - Biorestorative Underlay Mark IV
+giveitem u_a_unde_21          - Armorweave Underlay Mark IV
+giveitem u_a_unde_22          - Strengthening Underlay Mark IV
+giveitem u_a_unde_23          - Flexible Underlay Mark IV
+giveitem u_a_unde_24          - Durasteel Underlay Mark IV
+giveitem u_a_unde_25          - Environment Underlay Mark V
+giveitem u_a_unde_26          - Biorestorative Underlay Mark V
+giveitem u_a_unde_27          - Armorweave Underlay Mark V
+giveitem u_a_unde_28          - Strengthening Underlay Mark V
+giveitem u_a_unde_29          - Flexible Underlay Mark V
+giveitem u_a_unde_30          - Durasteel Underlay Mark V
+
+====================================================================
+ARMOR OVERLAYS (MARK I-IV)
+====================================================================
+giveitem u_a_over_01          - Heat Shielding Mark I
+giveitem u_a_over_02          - Armorply Plating Mark I
+giveitem u_a_over_03          - Sound Dampening Overlay Mark I
+giveitem u_a_over_04          - Ablative Plating Mark I
+giveitem u_a_over_05          - Energy Shielding Mark I
+giveitem u_a_over_06          - Ballistic Shielding Mark I
+giveitem u_a_over_07          - Bonded Plates Mark I
+giveitem u_a_over_08          - Heavy Bonded Plates Mark I
+giveitem u_a_over_09          - Heat Shielding Mark II
+giveitem u_a_over_10          - Armorply Plating Mark II
+giveitem u_a_over_11          - Sound Dampening Overlay Mark II
+giveitem u_a_over_12          - Ablative Plating Mark II
+giveitem u_a_over_13          - Energy Shielding Mark II
+giveitem u_a_over_14          - Ballistic Shielding Mark II
+giveitem u_a_over_15          - Bonded Plates Mark II
+giveitem u_a_over_16          - Heavy Bonded Plates Mark II
+giveitem u_a_over_17          - Heat Shielding Mark III
+giveitem u_a_over_18          - Armorply Plating Mark III
+giveitem u_a_over_19          - Sound Dampening Overlay Mark III
+giveitem u_a_over_20          - Ablative Plating Mark III
+giveitem u_a_over_21          - Energy Shielding Mark III
+giveitem u_a_over_22          - Ballistic Shielding Mark III
+giveitem u_a_over_23          - Bonded Plates Mark III
+giveitem u_a_over_24          - Heavy Bonded Plates Mark III
+giveitem u_a_over_25          - Heat Shielding Mark IV
+giveitem u_a_over_26          - Armorply Plating Mark IV
+giveitem u_a_over_27          - Sound Dampening Overlay Mark IV
+giveitem u_a_over_28          - Ablative Plating Mark IV
+giveitem u_a_over_29          - Energy Shielding Mark IV
+giveitem u_a_over_30          - Bonded Plates Mark IV
+
+====================================================================
 LIGHTSABER EMITTERS
 ====================================================================
 giveitem u_l_emit_01          - Deflection Emitter
