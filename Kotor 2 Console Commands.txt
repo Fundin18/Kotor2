@@ -1,773 +1,822 @@
 ====================================================================
-KOTOR 2 MASTER CHEAT SHEET 
+KOTOR 2 CONSOLE COMMANDS & ITEM REFERENCE
 ====================================================================
+Item mappings checked against installed Steam game resources, 2026-10-21.
+Includes the installed TSLRCM global item override layer.
+Selected item categories and destinations; not every game resource.
+Resource mappings verified; commands have not been playtested.
 
-====================================================================
-CONSOLE COMMANDS & ATTRIBUTES
-====================================================================
-
-[CORE ENGINE & UTILITY COMMANDS]
-heal                     - Maxes out health and force points for active party
-invulnerability          - Toggle god mode (main character takes zero damage)
-infiniteuses             - Item/shield/tool quantities never deplete
-turbo                    - Speeds up general game pace and movement speed
-revealmap                - Uncovers the entire map overlay for your zone
-bright                   - Disables dark shadows and fog of war lighting
-whereami                 - Prints active X, Y, Z coordinate values to logs
-restartminigame          - Restarts a stuck or failing turret/swoop minigame
-dance_dance_revan        - Easter Egg: Turn final area characters into Twi'leks
-
-[CHARACTER PROGRESSION & ALIGNMENT]
-addexp [number]          - Adds specified amount of experience points
-addlevel [number]        - Instantly increases level by specified number
-addlightside [number]    - Shifts alignment toward Light Side by amount
-adddarkside [number]     - Shifts alignment toward Dark Side by amount
-givecredits [number]     - Spawns the specified amount of credits
-
-[STAT ATTRIBUTE SETTERS (Usage: setattribute [0-5] [3-99])]
-setattribute 0 [3-99]    - Set raw Strength attribute score
-setattribute 1 [3-99]    - Set raw Dexterity attribute score
-setattribute 2 [3-99]    - Set raw Constitution attribute score
-setattribute 3 [3-99]    - Set raw Intelligence attribute score
-setattribute 4 [3-99]    - Set raw Wisdom attribute score
-setattribute 5 [3-99]    - Set raw Charisma attribute score
-
-[SKILL SETTERS (Usage: setskill [0-7] [3-99])]
-setskill 0 [3-99]        - Set Computer Use skill level
-setskill 1 [3-99]        - Set Demolitions skill level
-setskill 2 [3-99]        - Set Stealth skill level
-setskill 3 [3-99]        - Set Awareness skill level
-setskill 4 [3-99]        - Set Persuade skill level
-setskill 5 [3-99]        - Set Repair skill level
-setskill 6 [3-99]        - Set Security skill level
-setskill 7 [3-99]        - Set Treat Injury skill level
-
-[STANDALONE MACROS (Do NOT use 'giveitem' prefix)]
-givemed                  - Spawns a bundle of standard Medical Packs
-giverepair               - Spawns a bundle of Droid Repair Kits
-givecomspikes            - Spawns a bundle of Computer Spikes
-givesitharmor            - Spawns quest-specific Sith Armor (Taris style)
+ENABLE AND USE THE CONSOLE
+In swkotor2.ini, add EnableCheats=1 under [Game Options].
+Press the console key (` or ~ on a US keyboard); it is invisible.
+Type the command and press Enter. Do not type placeholder brackets.
+Example: giveitem w_blaste_02 gives an Ion Blaster.
+For commands below, replace [value] or [amount] with a number.
 
 ====================================================================
-MASTER LIGHTSABER & CRYSTAL ASSET CODES
+CORE ENGINE & UTILITY COMMANDS
 ====================================================================
-This block contains every standard, short, and double-bladed hilt ID,
-along with the complete range of color and power enhancement crystals.
+heal                      - Restore health and Force points
+invulnerability           - Toggle invulnerability
+infiniteuses              - Toggle unlimited uses for limited-use items
+turbo                     - Toggle faster character movement
+revealmap                 - Reveal the current area map
+bright                    - Toggle full brightness
+whereami                  - Output coordinates to the invisible console
+restartminigame           - Restart the current minigame
 
-To execute, open the invisible console with [~] and type:
-giveitem [code]
+====================================================================
+CHARACTER PROGRESSION & ALIGNMENT
+====================================================================
+addexp [amount]           - Add the specified experience points
+addlevel                  - Add experience for the next level
+addlightside [amount]     - Add Light Side points
+adddarkside [amount]      - Add Dark Side points
+givecredits [amount]      - Add the specified credits
 
---------------------------------------------------------------------
+====================================================================
+ATTRIBUTE SETTERS
+====================================================================
+setstrength [value]       - Set Strength
+setdexterity [value]      - Set Dexterity
+setconstitution [value]   - Set Constitution
+setintelligence [value]   - Set Intelligence
+setwisdom [value]         - Set Wisdom
+setcharisma [value]       - Set Charisma
+
+====================================================================
+SKILL SETTERS
+====================================================================
+setcomputeruse [value]    - Set Computer Use
+setdemolitions [value]    - Set Demolitions
+setstealth [value]        - Set Stealth
+setawareness [value]      - Set Awareness
+setpersuade [value]       - Set Persuade
+setrepair [value]         - Set Repair
+setsecurity [value]       - Set Security
+settreatinjury [value]    - Set Treat Injury
+
+====================================================================
+SUPPLY COMMANDS
+====================================================================
+givemed                   - Give 100 medkits
+giverepair                - Give 100 advanced repair kits
+givecomspikes             - Give 100 computer spikes
+
+====================================================================
 STANDARD LIGHTSABERS
---------------------------------------------------------------------
-giveitem g_w_lghtsbr01    - Blue Lightsaber
-giveitem g_w_lghtsbr02    - Red Lightsaber
-giveitem g_w_lghtsbr03    - Green Lightsaber
-giveitem g_w_lghtsbr04    - Yellow Lightsaber
-giveitem g_w_lghtsbr05    - Violet Lightsaber
-giveitem g_w_lghtsbr06    - Orange Lightsaber
-giveitem g_w_lghtsbr07    - Viridian Lightsaber
-giveitem g_w_lghtsbr08    - Silver Lightsaber
-giveitem g_w_lghtsbr09    - Cyan Lightsaber
-giveitem g_w_lghtsbr10    - Bronze Lightsaber
-giveitem g_w_lghtsbr11    - Custom / Quest Lightsaber Variant
+====================================================================
+giveitem g_w_lghtsbr01        - Blue Lightsaber
+giveitem g_w_lghtsbr02        - Red Lightsaber
+giveitem g_w_lghtsbr03        - Green Lightsaber
+giveitem g_w_lghtsbr04        - Yellow Lightsaber
+giveitem g_w_lghtsbr05        - Violet Lightsaber
+giveitem g_w_lghtsbr07        - Bronze Lightsaber
+giveitem g_w_lghtsbr08        - Orange Lightsaber
+giveitem g_w_lghtsbr09        - Silver Lightsaber
+giveitem g_w_lghtsbr10        - Cyan Lightsaber
+giveitem g_w_lghtsbr11        - Viridian Lightsaber
 
---------------------------------------------------------------------
-SHORT LIGHTSABERS (OFF-HAND / HIDDEN BLADES)
---------------------------------------------------------------------
-giveitem g_w_shortsbr01   - Blue Short Lightsaber
-giveitem g_w_shortsbr02   - Red Short Lightsaber
-giveitem g_w_shortsbr03   - Green Short Lightsaber
-giveitem g_w_shortsbr04   - Yellow Short Lightsaber
-giveitem g_w_shortsbr05   - Violet Short Lightsaber
-giveitem g_w_shortsbr06   - Orange Short Lightsaber
-giveitem g_w_shortsbr07   - Viridian Short Lightsaber
-giveitem g_w_shortsbr08   - Silver Short Lightsaber
-giveitem g_w_shortsbr09   - Cyan Short Lightsaber
-giveitem g_w_shortsbr10   - Bronze Short Lightsaber
+====================================================================
+SHORT LIGHTSABERS
+====================================================================
+giveitem g_w_shortsbr01       - Blue Short Lightsaber
+giveitem g_w_shortsbr02       - Red Short Lightsaber
+giveitem g_w_shortsbr03       - Green Short Lightsaber
+giveitem g_w_shortsbr04       - Yellow Short Lightsaber
+giveitem g_w_shortsbr05       - Violet Short Lightsaber
+giveitem g_w_shortsbr07       - Bronze Short Lightsaber
+giveitem g_w_shortsbr08       - Orange Short Lightsaber
+giveitem g_w_shortsbr09       - Silver Short Lightsaber
+giveitem g_w_shortsbr10       - Cyan Short Lightsaber
+giveitem g_w_shortsbr11       - Viridian Short Lightsaber
 
---------------------------------------------------------------------
+====================================================================
 DOUBLE-BLADED LIGHTSABERS
---------------------------------------------------------------------
-giveitem g_w_dblsbr001    - Blue Double Lightsaber
-giveitem g_w_dblsbr002    - Red Double Lightsaber
-giveitem g_w_dblsbr003    - Green Double Lightsaber
-giveitem g_w_dblsbr004    - Yellow Double Lightsaber
-giveitem g_w_dblsbr005    - Violet Double Lightsaber
-giveitem g_w_dblsbr006    - Orange Double Lightsaber
-giveitem g_w_dblsbr007    - Viridian Double Lightsaber
-giveitem g_w_dblsbr008    - Silver Double Lightsaber
-giveitem g_w_dblsbr009    - Cyan Double Lightsaber
-giveitem g_w_dblsbr010    - Bronze Double Lightsaber
+====================================================================
+giveitem g_w_dblsbr001        - Blue Double-Bladed Lightsaber
+giveitem g_w_dblsbr002        - Red Double-Bladed Lightsaber
+giveitem g_w_dblsbr003        - Green Double-Bladed Lightsaber
+giveitem g_w_dblsbr004        - Yellow Double-Bladed Lightsaber
+giveitem g_w_dblsbr005        - Violet Double-Bladed Lightsaber
+giveitem g_w_dblsbr007        - Bronze Double-Bladed Lightsaber
+giveitem g_w_dblsbr008        - Orange Double-Bladed Lightsaber
+giveitem g_w_dblsbr009        - Silver Double-Bladed Lightsaber
+giveitem g_w_dblsbr010        - Cyan Double-Bladed Lightsaber
+giveitem g_w_dblsbr011        - Viridian Double-Bladed Lightsaber
 
---------------------------------------------------------------------
+====================================================================
 LIGHTSABER COLOR CRYSTALS
---------------------------------------------------------------------
-giveitem u_l_colo_01      - Blue Color Crystal
-giveitem u_l_colo_02      - Red Color Crystal
-giveitem u_l_colo_03      - Green Color Crystal
-giveitem u_l_colo_04      - Yellow Color Crystal
-giveitem u_l_colo_05      - Violet Color Crystal
-giveitem u_l_colo_06      - Orange Color Crystal
-giveitem u_l_colo_07      - Viridian Color Crystal
-giveitem u_l_colo_08      - Silver Color Crystal
-giveitem u_l_colo_09      - Cyan Color Crystal
-giveitem u_l_colo_10      - Bronze Color Crystal
-
---------------------------------------------------------------------
-LIGHTSABER POWER FOCUSING CRYSTALS
---------------------------------------------------------------------
-giveitem u_l_crys_01      - Ankarres Sapphire
-giveitem u_l_crys_02      - Barab Ore Ingot
-giveitem u_l_crys_03      - Bondar Crystal
-giveitem u_l_crys_04      - Dragite Crystal
-giveitem u_l_crys_05      - Damind Crystal
-giveitem u_l_crys_06      - Eralam Crystal
-giveitem u_l_crys_07      - Firkrann Crystal
-giveitem u_l_crys_08      - Nextor Crystal
-giveitem u_l_crys_09      - Hurrikaine Crystal
-giveitem u_l_crys_10      - Opila Crystal
-giveitem u_l_crys_11      - Jenruax Crystal
-giveitem u_l_crys_12      - Kasha Crystal
-giveitem u_l_crys_13      - Luxum Crystal
-giveitem u_l_crys_14      - Phond Crystal
-giveitem u_l_crys_15      - Marukan Crystal
-giveitem u_l_crys_16      - Rubat Crystal
-giveitem u_l_crys_17      - Pontite Crystal
-giveitem u_l_crys_18      - Sapith Crystal
-giveitem u_l_crys_19      - Qixoni Crystal (Requires Dark Side)
-giveitem u_l_crys_20      - Sigil Crystal
-giveitem u_l_crys_22      - Solari Crystal (Requires Light Side)
-giveitem u_l_crys_23      - Stygium Crystal
-giveitem u_l_crys_24      - Upari Crystal
-giveitem u_l_crys_25      - Ruusan Crystal
+====================================================================
+giveitem u_l_colo_01          - Crystal, Blue
+giveitem u_l_colo_02          - Crystal, Green
+giveitem u_l_colo_03          - Crystal, Yellow
+giveitem u_l_colo_04          - Crystal, Red
+giveitem u_l_colo_05          - Crystal, Violet
+giveitem u_l_colo_06          - Crystal, Cyan
+giveitem u_l_colo_07          - Crystal, Silver
+giveitem u_l_colo_08          - Crystal, Orange
+giveitem u_l_colo_09          - Crystal, Viridian
+giveitem u_l_colo_10          - Crystal, Bronze
+Bronze exists as an item but is marked unused in the base game data.
 
 ====================================================================
-JEDI & SITH ROBES, ARMOR, AND CLOTHING ASSET CODES
+LIGHTSABER POWER CRYSTALS
 ====================================================================
-This block contains the complete sequential master list of every
-Jedi/Sith robe and all light, medium, and heavy armor suits.
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-JEDI & SITH ROBES (SEQUENTIAL ASSETS)
---------------------------------------------------------------------
-giveitem a_robe_01        - Standard Clothing
-giveitem a_robe_02        - Padawan Robe
-giveitem a_robe_03        - Dark Padawan Robe
-giveitem a_robe_04        - Grey Jedi Robe
-giveitem a_robe_05        - Knight Robe
-giveitem a_robe_06        - Jedi Robe
-giveitem a_robe_07        - Dark Jedi Robe
-giveitem a_robe_08        - Arca Jeth's Robe
-giveitem a_robe_09        - Aleema Keto's Robe
-giveitem a_robe_10        - Sylvar's Robe
-giveitem a_robe_11        - Matukai Apprentice Robe
-giveitem a_robe_12        - Zeison Sha Initiate Armor
-giveitem a_robe_13        - Jal Shey Neophyte Armor
-giveitem a_robe_14        - Crado's Robe
-giveitem a_robe_15        - Nomi's Robe
-giveitem a_robe_16        - Jedi Knight Robe
-giveitem a_robe_17        - Dark Jedi Knight Robe
-giveitem a_robe_18        - Jonae's Robe
-giveitem a_robe_19        - Thon's Robe
-giveitem a_robe_20        - Dark Jedi Knight Robe (Alternate)
-giveitem a_robe_21        - Jedi Master Robe
-giveitem a_robe_22        - Dark Jedi Master Robe
-giveitem a_robe_23        - Matukai Adept Robe
-giveitem a_robe_24        - Zeison Sha Warrior Armor
-giveitem a_robe_25        - Jal Shey Advisor Armor
-giveitem a_robe_26        - Dark Jedi Master Robe (Alternate)
-giveitem a_robe_27        - Natth Cowl
-giveitem a_robe_28        - Vodo-Siosk Baas' Robe
-giveitem a_robe_29        - Cay Qel-Droma's Robe
-giveitem a_robe_30        - Ossus Keeper Robe
-giveitem a_robe_31        - Baodur's Clothing
-giveitem a_robe_32        - Mira's Clothing
-giveitem a_robe_33        - Revan's Robes
-giveitem a_robe_34        - Malak's Armor
-giveitem a_robe_x01       - Handmaiden's Robe
-
---------------------------------------------------------------------
-LIGHT ARMOR & SUITS (a_light_01 to a_light_15)
---------------------------------------------------------------------
-giveitem mineruniform     - Peragus Mining Uniform
-giveitem g_danceroutfit   - Dancer's Outfit
-giveitem a_light_x02      - Atton's Ribbed Jacket
-giveitem a_light_01       - Combat Suit
-giveitem a_light_02       - Light Combat Armor
-giveitem a_light_03       - Bio-Stabilizer Suit
-giveitem a_light_04       - Reinforced Fiber Armor
-giveitem a_light_05       - Zabrak Combat Suit
-giveitem a_light_06       - Infiltrator Suit
-giveitem a_light_07       - Echani Light Armor
-giveitem a_light_08       - Cinnagar War Suit
-giveitem a_light_09       - Mandalorian Heavy Suit
-giveitem a_light_10       - Ubese Environmental Suit
-giveitem a_light_11       - Genoharadan Mesh Armor
-giveitem a_light_12       - Baragwin Mesh Armor
-giveitem a_light_13       - Krath Heavy Armor
-giveitem a_light_14       - Massassi Armor
-giveitem a_light_15       - Jal Shey Mentor Armor
-
---------------------------------------------------------------------
-MEDIUM ARMOR (a_medium_01 to a_medium_14)
---------------------------------------------------------------------
-giveitem a_medium_01      - Military Suit
-giveitem a_medium_02      - Armor Suit
-giveitem a_medium_03      - Echani Battle Armor
-giveitem a_medium_04      - Guardian Armor
-giveitem a_medium_05      - Chromium Armor
-giveitem a_medium_06      - Bonadan Alloy Armor
-giveitem a_medium_07      - Ubese Armor
-giveitem a_medium_08      - Mandalorian Battle Armor
-giveitem a_medium_09      - Calo Nord's Armor
-giveitem a_medium_10      - Sith Battle Armor
-giveitem a_medium_11      - Cassus Fett's Armor
-giveitem a_medium_12      - Baragwin Shadow Armor
-giveitem a_medium_13      - Zeison Sha Master Armor
-giveitem a_medium_14      - Exar Kun's Battle Armor
-
---------------------------------------------------------------------
-HEAVY ARMOR (a_heavy_01 to a_heavy_14)
---------------------------------------------------------------------
-giveitem a_heavy_01       - Battle Armor
-giveitem a_heavy_02       - Heavy Battle Armor
-giveitem a_heavy_03       - Environmental Suit
-giveitem a_heavy_04       - Powered Battle Armor
-giveitem a_heavy_05       - Verpine Fiber Mesh
-giveitem a_heavy_06       - Mandalorian Combat Armor
-giveitem a_heavy_07       - Heavy Exoskeleton
-giveitem a_heavy_08       - Sith Heavy Armor
-giveitem a_heavy_09       - Jurgan Kalta's Power Suit
-giveitem a_heavy_10       - Firkrann Power Suit
-giveitem a_heavy_11       - Ordo's Heavy Battle Armor
-giveitem a_heavy_12       - Verpine Zal Alloy Mesh
-giveitem a_heavy_13       - Mandalorian Assault Armor
-giveitem a_heavy_14       - Krath Holy Armor
+giveitem u_l_crys_01          - Crystal, Adegan
+giveitem u_l_crys_02          - Crystal, Rubat
+giveitem u_l_crys_03          - Crystal, Ruusan
+giveitem u_l_crys_04          - Crystal, Nextor
+giveitem u_l_crys_05          - Crystal, Dragite
+giveitem u_l_crys_06          - Crystal, Firkrann
+giveitem u_l_crys_07          - Crystal, Phond
+giveitem u_l_crys_08          - Crystal, Bondar
+giveitem u_l_crys_09          - Crystal, Velmorite
+giveitem u_l_crys_10          - Crystal, Sigil
+giveitem u_l_crys_11          - Crystal, Jenruax
+giveitem u_l_crys_12          - Crystal, Kasha
+giveitem u_l_crys_13          - Crystal, Opila
+giveitem u_l_crys_14          - Crystal, Eralam
+giveitem u_l_crys_15          - Crystal, Stygium
+giveitem u_l_crys_16          - Crystal, Damind
+giveitem u_l_crys_17          - Crystal, Sapith
+giveitem u_l_crys_18          - Crystal, Pontite
+giveitem u_l_crys_19          - Crystal, Upari
+giveitem u_l_crys_20          - Ultima-pearl
+giveitem u_l_crys_21          - Crystal, Solari
+giveitem u_l_crys_21x         - Crystal, Qixoni
+giveitem u_l_crys_22          - Lorrdian Gemstone
+giveitem u_l_crys_23          - Barab Ore Ingot
+giveitem u_l_crys_24          - Ankarres Sapphire
+giveitem u_l_crys_25          - Crystal, Kaiburr
+giveitem u_l_crys_x23         - Crystal, Hurrikaine
 
 ====================================================================
-MASTER LIGHTSABER UPGRADE COMPONENTS
+ROBES & JEDI ARMOR
 ====================================================================
-This block contains the complete range of Emitters, Lenses, 
-and Energy Cells to fully customize and max out your lightsaber statistics.
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-EMITTERS (u_l_emit_01 to u_l_emit_11)
---------------------------------------------------------------------
-giveitem u_l_emit_01      - Deflection Emitter Mark I
-giveitem u_l_emit_02      - Deflection Emitter Mark II
-giveitem u_l_emit_03      - Deflection Emitter Mark III
-giveitem u_l_emit_04      - Fencing Emitter Mark I
-giveitem u_l_emit_05      - Fencing Efficacy Emitter Mark II
-giveitem u_l_emit_06      - Fencing Efficacy Emitter Mark III
-giveitem u_l_emit_07      - High Discharge Emitter Mark I
-giveitem u_l_emit_08      - High Discharge Emitter Mark II
-giveitem u_l_emit_09      - High Discharge Emitter Mark III
-giveitem u_l_emit_10      - Guard Shroud Emitter
-giveitem u_l_emit_11      - Ossus Emitter
-
---------------------------------------------------------------------
-LENSES (u_l_lens_01 to u_l_lens_08)
---------------------------------------------------------------------
-giveitem u_l_lens_01      - Vibration Lens Mark I
-giveitem u_l_lens_02      - Vibration Lens Mark II
-giveitem u_l_lens_03      - Vibration Lens Mark III
-giveitem u_l_lens_04      - Beam Focusing Lens Mark I
-giveitem u_l_lens_05      - Beam Focusing Lens Mark II
-giveitem u_l_lens_06      - Beam Focusing Lens Mark III
-giveitem u_l_lens_07      - Pontite Lens Mark I
-giveitem u_l_lens_08      - Pontite Lens Mark II
-
---------------------------------------------------------------------
-ENERGY CELLS (u_l_cell_01 to u_l_cell_09)
---------------------------------------------------------------------
-giveitem u_l_cell_01      - Ion Cell Mark I
-giveitem u_l_cell_02      - Ion Cell Mark II
-giveitem u_l_cell_03      - Ion Cell Mark III
-giveitem u_l_cell_04      - Ion Cell Mark IV
-giveitem u_l_cell_05      - Power Cell Mark I
-giveitem u_l_cell_06      - Power Cell Mark II
-giveitem u_l_cell_07      - Power Cell Mark III
-giveitem u_l_cell_08      - Power Cell Mark IV
-giveitem u_l_cell_09      - Diatium Energy Cell
+giveitem a_robe_01            - Clothing
+giveitem a_robe_02            - Padawan Robe
+giveitem a_robe_03            - Dark Padawan Robe
+giveitem a_robe_04            - Baran Do Novice Robe
+giveitem a_robe_05            - Matukai Apprentice Robe
+giveitem a_robe_06            - Zeison Sha Initiate Armor
+giveitem a_robe_07            - Jal Shey Neophyte Armor
+giveitem a_robe_08            - Jedi Robe
+giveitem a_robe_09            - Dark Jedi Robe
+giveitem a_robe_10            - Norris Robe
+giveitem a_robe_11            - Jal Shey Advisor Armor
+giveitem a_robe_12            - Gray Jedi Robe
+giveitem a_robe_13            - Jedi Knight Robe
+giveitem a_robe_14            - Dark Jedi Knight Robe
+giveitem a_robe_15            - Matukai Adept Robe
+giveitem a_robe_16            - Zeison Sha Warrior Armor
+giveitem a_robe_17            - Jedi Master Robe
+giveitem a_robe_18            - Dark Jedi Master Robe
+giveitem a_robe_19            - Baran Do Sage Robe
+giveitem a_robe_20            - Jal Shey Mentor Armor
+giveitem a_robe_21            - Ossus Keeper Robe
+giveitem a_robe_22            - Natth Cowling
+giveitem a_robe_23            - Arca Jeth's Robe
+giveitem a_robe_24            - Aleema Keto's Robe
+giveitem a_robe_25            - Sylvar's Robe
+giveitem a_robe_26            - Darth Malak's Armor
+giveitem a_robe_27            - Jolee's Robe
+giveitem a_robe_28            - Thon's Robe
+giveitem a_robe_29            - Crado's Robe
+giveitem a_robe_30            - Nomi's Robe
+giveitem a_robe_x01           - Handmaiden's Robe
 
 ====================================================================
-RANGED & MELEE WEAPONS ASSET CODES
+LIGHT ARMOR & CLOTHING
 ====================================================================
-This block contains the complete master list of Blaster Pistols, 
-Rifles, Heavy Ordnance, and Melee Weapons (Vibroblades/Swords).
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-BLASTER PISTOLS (w_blaste_01 to w_blaste_25)
---------------------------------------------------------------------
-giveitem w_blaste_01      - Blaster Pistol
-giveitem w_blaste_02      - Heavy Blaster Pistol
-giveitem w_blaste_03      - Holdout Blaster
-giveitem w_blaste_04      - Sonic Pistol
-giveitem w_blaste_05      - Mandalorian Heavy Pistol
-giveitem w_blaste_06      - Disruptor Pistol
-giveitem w_blaste_07      - Ion Pistol
-giveitem w_blaste_08      - Zabrak Blaster Pistol
-giveitem w_blaste_09      - Arkanian Pistol
-giveitem w_blaste_10      - Sith Blaster
-giveitem w_blaste_11      - Mandalorian Ripper
-giveitem w_blaste_12      - Plasma Pistol
-giveitem w_blaste_13      - Onasi Blaster
-giveitem w_blaste_14      - Micro-Disruptor
-giveitem w_blaste_15      - Mandalorian Heavy Ripper
-giveitem w_blaste_16      - Elite Watchman Pistol
-giveitem w_blaste_17      - Bothan Quick Draw Pistol
-giveitem w_blaste_18      - Zabrak Heavy Pistol
-giveitem w_blaste_19      - Arkanian Heavy Pistol
-giveitem w_blaste_20      - Verpine Heros Pistol
-giveitem w_blaste_21      - Mira's Wrist Rocket Launcher
-giveitem w_blaste_22      - Hanharr's Bowcaster Pistol
-giveitem w_blaste_23      - Charric
-giveitem w_blaste_24      - Jequuues Blaster
-giveitem w_blaste_25      - Watchman Blaster Pistol
-
---------------------------------------------------------------------
-BLASTER RIFLES & HEAVY WEAPONS (w_brifle_01 to w_brifle_15)
---------------------------------------------------------------------
-giveitem w_brifle_01      - Blaster Rifle
-giveitem w_brifle_02      - Bowcaster
-giveitem w_brifle_03      - Sonic Rifle
-giveitem w_brifle_04      - Ion Rifle
-giveitem w_brifle_05      - Disruptor Rifle
-giveitem w_brifle_06      - Zabrak Battle Rifle
-giveitem w_brifle_07      - Arkanian Heavy Rifle
-giveitem w_brifle_08      - Mandalorian Assault Rifle
-giveitem w_brifle_09      - Zersium Rifle
-giveitem w_brifle_10      - Verpine Sniper Rifle
-giveitem w_brifle_11      - Bothan Needler Rifle
-giveitem w_brifle_12      - Repeating Blaster
-giveitem w_brifle_13      - Heavy Repeating Blaster
-giveitem w_brifle_14      - Plasma Rifle
-giveitem w_brifle_15      - Mandalorian Heavy Repeater
-
---------------------------------------------------------------------
-MELEE WEAPONS (w_melee_01 to w_melee_30)
---------------------------------------------------------------------
-giveitem w_melee_01       - Vibroblade
-giveitem w_melee_02       - Vibrosword
-giveitem w_melee_03       - Vibro Double-Blade
-giveitem w_melee_04       - Quarterstaff
-giveitem w_melee_05       - Gaderffii Stick
-giveitem w_melee_06       - Stun Baton
-giveitem w_melee_07       - Longsword
-giveitem w_melee_08       - Short Sword
-giveitem w_melee_09       - Vibrocutter
-giveitem w_melee_10       - Echani Vibroblade
-giveitem w_melee_11       - Zabrak Vibroblade
-giveitem w_melee_12       - Arkanian Vibroblade
-giveitem w_melee_13       - Sanasiki's Blade
-giveitem w_melee_14       - Prototype Vibroblade
-giveitem w_melee_15       - Bacca's Ceremonial Blade
-giveitem w_melee_16       - Sith Tremor Sword
-giveitem w_melee_17       - Echani Dueling Sword
-giveitem w_melee_18       - Echani Ritual Brand
-giveitem w_melee_19       - Mandalorian Vibroblade
-giveitem w_melee_20       - Freyyr's Warblade
-giveitem w_melee_21       - Ryyk Blade
-giveitem w_melee_22       - Wookiee Warblade
-giveitem w_melee_23       - Senni Vek's Vibroblade
-giveitem w_melee_24       - Naga Sadow's Poison Blade
-giveitem w_melee_25       - Genoharadan Poison Blade
-giveitem w_melee_30       - Gamorrean Battle Axe
+giveitem a_light_01           - Light Combat Suit
+giveitem a_light_02           - Combat Suit
+giveitem a_light_03           - Heavy Combat Suit
+giveitem a_light_04           - Mandalorian Combat Suit
+giveitem a_light_05           - Zabrak Combat Suit
+giveitem a_light_06           - Bonadan Alloy Heavy Suit
+giveitem a_light_07           - Echani Light Armor
+giveitem a_light_08           - Massassi Ceremonial Armor
+giveitem a_light_09           - Mandalorian Heavy Suit
+giveitem a_light_10           - Zabrak Battle Armor
+giveitem a_light_11           - Ubese Environmental Suit
+giveitem a_light_12           - Echani Shield Suit
+giveitem a_light_13           - Reinforced Fiber Armor
+giveitem a_light_14           - Zabrak Field Armor
+giveitem a_light_15           - Ulic Qel Droma's Mesh Suit
+giveitem a_light_x02          - Atton's Ribbed Jacket
+giveitem a_light_x08          - Electromesh Suit
+giveitem a_light_x09          - Mira's Ballistic Mesh Jacket
+giveitem g_danceroutfit       - Dancer's Outfit
+giveitem mineruniform         - Miner Uniform
 
 ====================================================================
-RANGED WEAPON UPGRADE COMPONENTS
+MEDIUM ARMOR
 ====================================================================
-This block contains the complete sequential master list for all
-Scopes, Firing Chambers, and Power Packs used to upgrade blasters.
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-SCOPES & TARGETING UPGRADES (u_r_targ_01 to u_r_targ_15)
---------------------------------------------------------------------
-giveitem u_r_targ_01      - Scope Mark I
-giveitem u_r_targ_02      - Scope Mark II
-giveitem u_r_targ_03      - Scope Mark III
-giveitem u_r_targ_04      - Targeting Scope Mark I
-giveitem u_r_targ_05      - Targeting Scope Mark II
-giveitem u_r_targ_06      - Targeting Scope Mark III
-giveitem u_r_targ_07      - Targeting Scope Mark IV
-giveitem u_r_targ_08      - Pinpoint Scope Mark I
-giveitem u_r_targ_09      - Pinpoint Scope Mark II
-giveitem u_r_targ_10      - Pinpoint Scope Mark III
-giveitem u_r_targ_11      - Pinpoint Scope Mark IV
-giveitem u_r_targ_12      - Crippling Scope Mark I
-giveitem u_r_targ_13      - Crippling Scope Mark II
-giveitem u_r_targ_14      - Crippling Scope Mark III
-giveitem u_r_targ_15      - Crippling Scope Mark IV
-
---------------------------------------------------------------------
-FIRING CHAMBER UPGRADES (u_r_firi_01 to u_r_firi_15)
---------------------------------------------------------------------
-giveitem u_r_firi_01      - Broadening Chamber Mark I
-giveitem u_r_firi_02      - Broadening Chamber Mark II
-giveitem u_r_firi_03      - Broadening Chamber Mark III
-giveitem u_r_firi_04      - Broadening Chamber Mark IV
-giveitem u_r_firi_05      - Amplifying Chamber Mark I
-giveitem u_r_firi_06      - Amplifying Chamber Mark II
-giveitem u_r_firi_07      - Amplifying Chamber Mark III
-giveitem u_r_firi_08      - Amplifying Chamber Mark IV
-giveitem u_r_firi_09      - Precision Chamber Mark I
-giveitem u_r_firi_10      - Precision Chamber Mark II
-giveitem u_r_firi_11      - Precision Chamber Mark III
-giveitem u_r_firi_12      - Precision Chamber Mark IV
-giveitem u_r_firi_13      - Beam Splitter Mark I
-giveitem u_r_firi_14      - Beam Splitter Mark II
-giveitem u_r_firi_15      - Beam Splitter Mark III
-
---------------------------------------------------------------------
-POWER PACK UPGRADES (u_r_powe_01 to u_r_powe_12)
---------------------------------------------------------------------
-giveitem u_r_powe_01      - Energy Power Pack Mark I
-giveitem u_r_powe_02      - Energy Power Pack Mark II
-giveitem u_r_powe_03      - Energy Power Pack Mark III
-giveitem u_r_powe_04      - Ion Charger Mark I
-giveitem u_r_powe_05      - Ion Charger Mark II
-giveitem u_r_powe_06      - Ion Charger Mark III
-giveitem u_r_powe_07      - Sonic Discharge Cell Mark I
-giveitem u_r_powe_08      - Sonic Discharge Cell Mark II
-giveitem u_r_powe_09      - Sonic Discharge Cell Mark III
-giveitem u_r_powe_10      - Plasma Ejector Mark I
-giveitem u_r_powe_11      - Plasma Ejector Mark II
-giveitem u_r_powe_12      - Plasma Ejector Mark III
+giveitem a_medium_01          - Military Suit
+giveitem a_medium_02          - Light Battle Armor
+giveitem a_medium_03          - Echani Battle Armor
+giveitem a_medium_04          - Cinnagar War Suit
+giveitem a_medium_05          - Sith Battle Suit
+giveitem a_medium_06          - Bronzium Light Battle Armor
+giveitem a_medium_07          - Verpine Fiber Mesh
+giveitem a_medium_08          - Krath Heavy Armor
+giveitem a_medium_09          - Powered Light Battle Armor
+giveitem a_medium_10          - Krath Holy Battle Suit
+giveitem a_medium_11          - Exar Kun's Light Battle Suit
+giveitem a_medium_12          - Heavy Cinnagar War Suit
+giveitem a_medium_13          - Verpine Fiber Ultramesh
+giveitem a_medium_14          - Electromesh Armor
+giveitem a_medium_15          - Jamoh Hogra's Battle Armor
 
 ====================================================================
-MASTER BELTS, HEADGEAR, AND GLOVES ASSET CODES
+HEAVY ARMOR
 ====================================================================
-This block contains the complete sequential master list for all
-Belts, Headgear (Masks/Visors), and Gloves/Gauntlets.
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-BELTS (a_belt_01 to a_belt_20)
---------------------------------------------------------------------
-giveitem a_belt_01        - Basic Combat Belt
-giveitem a_belt_02        - Adrenaline Amplifier
-giveitem a_belt_03        - Nerve Amplifier Belt
-giveitem a_belt_04        - Demolitions Belt
-giveitem a_belt_05        - Stealth Field Generator
-giveitem a_belt_06        - Advanced Stealth Field Generator
-giveitem a_belt_07        - Moisture Absorbing Belt
-giveitem a_belt_08        - Thermal Shielding Belt
-giveitem a_belt_09        - Sound Dampening Belt
-giveitem a_belt_10        - Cardio-Regulator
-giveitem a_belt_11        - Power Belt
-giveitem a_belt_12        - CNS Strength Enhancer
-giveitem a_belt_13        - Gorton Collector's Belt
-giveitem a_belt_14        - Electrical Capacitance Shield
-giveitem a_belt_15        - Baragwin Stealth Unit
-giveitem a_belt_16        - Sith Battle Belt
-giveitem a_belt_17        - Arkanian Energetic Belt
-giveitem a_belt_18        - Jal Shey Mentor Belt
-giveitem a_belt_19        - Verpine Cardio-Regulator
-giveitem a_belt_20        - Immunity Belt
-
---------------------------------------------------------------------
-HEADGEAR (a_helmet_01 to a_helmet_26)
---------------------------------------------------------------------
-giveitem a_helmet_01      - Neural Band
-giveitem a_helmet_02      - Breath Mask
-giveitem a_helmet_03      - Rakatan Band
-giveitem a_helmet_04      - Stealth Field Enhancer
-giveitem a_helmet_05      - Bothan Perception Visor
-giveitem a_helmet_06      - Sonic Nullifiers
-giveitem a_helmet_07      - Interface Band
-giveitem a_helmet_08      - Targeting Visor
-giveitem a_helmet_09      - Shielding Visor
-giveitem a_helmet_10      - Spacer's Sensor
-giveitem a_helmet_11      - Regal Visor
-giveitem a_helmet_12      - Meditation Band
-giveitem a_helmet_13      - Bothan Sensory Visor
-giveitem a_helmet_14      - Arkanian Blinders
-giveitem a_helmet_15      - Combat Sensor
-giveitem a_helmet_16      - Multi-spectral Target Assessor
-giveitem a_helmet_17      - Consciousness Helm
-giveitem a_helmet_18      - Rebreather Mask
-giveitem a_helmet_19      - Das'skar Hunting Mask
-giveitem a_helmet_20      - Force Mask
-giveitem a_helmet_21      - Sith Mask
-giveitem a_helmet_22      - Stabilizer Mask
-giveitem a_helmet_23      - Matukai Meditation Band
-giveitem a_helmet_24      - Target Assessor
-giveitem a_helmet_25      - Circlet of Saresh
-giveitem a_helmet_26      - Bindo's Band
-
---------------------------------------------------------------------
-GLOVES & GAUNTLETS (a_gloves_01 to a_gloves_14)
---------------------------------------------------------------------
-giveitem a_gloves_01      - Basic Construction Gloves
-giveitem a_gloves_02      - Infiltrator Gloves
-giveitem a_gloves_03      - Tech-Asst Gloves
-giveitem a_gloves_04      - Power Gloves
-giveitem a_gloves_05      - Sith Power Gauntlets
-giveitem a_gloves_06      - Zabrak Combat Gloves
-giveitem a_gloves_07      - Jal Shey Advisor Gloves
-giveitem a_gloves_08      - Breaker Gloves
-giveitem a_gloves_09      - Advanced Stabilizer Gloves
-giveitem a_gloves_10      - Dominator Gauntlets
-giveitem a_gloves_11      - Eriadu Strength Amplifiers
-giveitem a_gloves_12      - Genoharadan Power Gloves
-giveitem a_gloves_13      - Marka Ragnos' Gauntlets
-giveitem a_gloves_14      - Arkanian Bondsman Gloves
+giveitem a_heavy_01           - Battle Armor
+giveitem a_heavy_02           - Heavy Battle Armor
+giveitem a_heavy_03           - Echani Heavy Armor
+giveitem a_heavy_04           - Durasteel Heavy Armor
+giveitem a_heavy_05           - Powered Battle Armor
+giveitem a_heavy_06           - Flex Heavy Armor
+giveitem a_heavy_07           - Mandalorian Battle Armor
+giveitem a_heavy_08           - Mandalorian Heavy Armor
+giveitem a_heavy_09           - Verpine Zal Alloy Mesh
+giveitem a_heavy_10           - Mandalorian Assault Armor
+giveitem a_heavy_11           - Corellian Powersuit
+giveitem a_heavy_12           - M'uhk'gfa
+giveitem a_heavy_13           - Iotran Braceman Armor
+giveitem a_heavy_14           - Felenar Armor
+giveitem a_heavy_15           - Matrix Armor
+giveitem a_heavy_x01          - Mandalore's Armor
 
 ====================================================================
-IMPLANTS & ENERGY SHIELD ARMBANDS
+LIGHTSABER EMITTERS
 ====================================================================
-This block contains the complete sequential master list for all
-Implants (Tiers 1-4) and Energy Shield Armbands.
-
-To execute, open the invisible console with [~] and type:
-giveitem [code]
-
---------------------------------------------------------------------
-TIER 1 IMPLANTS (Requires Constitution 12+)
---------------------------------------------------------------------
-giveitem e_imp1_01        - Cardio-Package
-giveitem e_imp1_02        - Memory Package
-giveitem e_imp1_03        - Reflex Package
-giveitem e_imp1_04        - Response Package
-giveitem e_imp1_05        - Bith Perception Implant
-giveitem e_imp1_06        - Cynosure Package
-giveitem e_imp1_07        - Sensory Enhancement System
-
---------------------------------------------------------------------
-TIER 2 IMPLANTS (Requires Constitution 14+)
---------------------------------------------------------------------
-giveitem e_imp2_01        - Advanced Cardio-Package
-giveitem e_imp2_02        - Advanced Memory Package
-giveitem e_imp2_03        - Advanced Reflex Package
-giveitem e_imp2_04        - Cyber Enhancer System
-giveitem e_imp2_05        - Bioreactive System
-giveitem e_imp2_06        - Infiltrator System
-giveitem e_imp2_07        - Biological Verification Implant
-
---------------------------------------------------------------------
-TIER 3 IMPLANTS (Requires Constitution 16+)
---------------------------------------------------------------------
-giveitem e_imp3_01        - Power System
-giveitem e_imp3_02        - Athletic System
-giveitem e_imp3_03        - Mental Boost System
-giveitem e_imp3_04        - Hyper-Drive Enhancer
-giveitem e_imp3_05        - Regeneration System
-giveitem e_imp3_06        - Quickness System
-giveitem e_imp3_07        - Gordulan Cybernetic Optimization
-
---------------------------------------------------------------------
-TIER 4 IMPLANTS (Requires Constitution 18+)
---------------------------------------------------------------------
-giveitem e_imp4_01        - D-Package
-giveitem e_imp4_02        - Physical Boost System
-giveitem e_imp4_03        - Cognitive Booster
-giveitem e_imp4_04        - Bao-Dur's Cybernetic Arm (Unique)
-giveitem e_imp4_05        - Anabolic System
-
---------------------------------------------------------------------
-ENERGY SHIELD ARMBANDS & UTILITY ARMBANDS
---------------------------------------------------------------------
-giveitem a_shield_01      - Energy Shield
-giveitem a_shield_02      - Sith Energy Shield
-giveitem a_shield_03      - Mandalorian Melee Shield
-giveitem a_shield_04      - Echani Shield
-giveitem a_shield_05      - Arkanian Energy Shield
-giveitem a_shield_06      - Verpine Prototype Shield
-giveitem a_shield_07      - Yusanis' Dueling Shield
-giveitem a_shield_08      - Mandalorian Power Shield
-giveitem a_shield_09      - Radian Power Shield
-giveitem a_shield_10      - Echani Dueling Shield
-giveitem a_shield_11      - Bao-Dur's Repulsor Shield (Unique)
-giveitem a_armband_01     - Bowcaster Sighting Armband
-giveitem a_armband_02     - Targeter Armband
-giveitem a_armband_03     - Demolitions Sensor Armband
-giveitem a_armband_04     - Stealth Field Generator Armband
-giveitem a_armband_05     - Sonic Nullifier Armband
+giveitem u_l_emit_01          - Deflection Emitter
+giveitem u_l_emit_02          - Disrupting Emitter
+giveitem u_l_emit_03          - Crude Phobium Emitter
+giveitem u_l_emit_04          - Fencing Emitter
+giveitem u_l_emit_05          - Improved Deflection Emitter
+giveitem u_l_emit_06          - Advanced Disrupting Emitter
+giveitem u_l_emit_07          - Synthesized Phobium Emitter
+giveitem u_l_emit_08          - Improved Fencing Emitter
+giveitem u_l_emit_09          - Expert Deflection Emitter
+giveitem u_l_emit_10          - Superior Disrupting Emitter
+giveitem u_l_emit_11          - Phobium Alloy Emitter
+giveitem u_l_emit_12          - Expert Fencing Emitter
+giveitem u_l_emit_13          - Refined Phobium Emitter
 
 ====================================================================
-GRENADES, MINES, AND MELEE WEAPON UPGRADES
+LIGHTSABER LENSES
 ====================================================================
-This block contains the complete master list for all deployable 
-Mines, throwable Grenades, and heavy Melee Edge/Cell upgrades.
+giveitem u_l_lens_01          - Synthesized Kunda Lens
+giveitem u_l_lens_02          - Dragite Lens
+giveitem u_l_lens_03          - Synthesized Byrothsis Lens
+giveitem u_l_lens_04          - Beam Gem Lens
+giveitem u_l_lens_05          - Vibration Lens
+giveitem u_l_lens_06          - Pure Kunda Lens
+giveitem u_l_lens_07          - Adegan Lens
+giveitem u_l_lens_08          - Pure Byrothsis Lens
+giveitem u_l_lens_09          - Improved Beam Gem Lens
+giveitem u_l_lens_10          - Improved Vibration Lens
+giveitem u_l_lens_11          - Ossus Dueling Lens
+giveitem u_l_lens_12          - Pontite Lens
+giveitem u_l_lens_13          - Enhanced Byrothsis Lens
 
-To execute, open the invisible console with [~] and type:
-giveitem [code]
+====================================================================
+LIGHTSABER ENERGY CELLS
+====================================================================
+giveitem u_l_cell_01          - Discharge Energy Cell
+giveitem u_l_cell_02          - Diatium Energy Cell
+giveitem u_l_cell_03          - Ion Energy Cell
+giveitem u_l_cell_04          - Telgorn Jolt Cell Mark I
+giveitem u_l_cell_05          - Improved Discharge Energy Cell
+giveitem u_l_cell_06          - Improved Diatium Energy Cell
+giveitem u_l_cell_07          - Improved Ion Energy Cell
+giveitem u_l_cell_08          - Telgorn Jolt Cell Mark II
+giveitem u_l_cell_09          - Superior Discharge Energy Cell
+giveitem u_l_cell_10          - Superior Diatium Energy Cell
+giveitem u_l_cell_11          - Superior Ion Energy Cell
+giveitem u_l_cell_12          - Telgorn Jolt Cell Mark III
+giveitem u_l_cell_13          - Ultimate Diatium Energy Cell
 
---------------------------------------------------------------------
+====================================================================
+BLASTER PISTOLS
+====================================================================
+giveitem w_blaste_01          - Blaster Pistol
+giveitem w_blaste_02          - Ion Blaster
+giveitem w_blaste_03          - Field Survival Pistol
+giveitem w_blaste_04          - Sonic Pistol
+giveitem w_blaste_05          - Disruptor Pistol
+giveitem w_blaste_06          - Heavy Blaster
+giveitem w_blaste_07          - Scout Enforcer
+giveitem w_blaste_08          - Systech Aural Blaster
+giveitem w_blaste_09          - Republic Blaster
+giveitem w_blaste_10          - Aratech Droid Oxidizer
+giveitem w_blaste_11          - Arkanian Heavy Pistol
+giveitem w_blaste_12          - Mandalorian Blaster
+giveitem w_blaste_13          - Systech Static Blaster
+giveitem w_blaste_14          - Arkanian Sonic Blaster
+giveitem w_blaste_15          - Sith Disruptor
+giveitem w_blaste_16          - Mandalorian Heavy Blaster
+giveitem w_blaste_17          - Heavy Sonic Blaster
+giveitem w_blaste_18          - Watchman Blaster
+giveitem w_blaste_19          - Zabrak Blaster Pistol
+giveitem w_blaste_20          - Mandalorian Ripper
+giveitem w_blaste_21          - Aratech Ionmaster
+giveitem w_blaste_22          - Onasi Blaster
+giveitem w_blaste_23          - Dashade Sonic Blaster
+giveitem w_blaste_24          - Zabrak Heavy Blaster
+giveitem w_blaste_25          - Systech Electric Blaster
+giveitem w_blaste_26          - Micro-Pulse Blaster
+giveitem w_blaste_27          - Elite Watchman Blaster
+giveitem w_blaste_28          - Mandalorian Disintegrator
+giveitem w_blaste_29          - Dashade Sonic Disruptor
+giveitem w_blaste_30          - Freedon Nadd's Blaster
+giveitem w_blaste_x05         - Luxa's Disruptor
+giveitem w_blaste_x20         - Remote's Blaster
+
+====================================================================
+BLASTER RIFLES & HEAVY WEAPONS
+====================================================================
+giveitem w_brifle_01          - Blaster Carbine
+giveitem w_brifle_02          - Ion Carbine
+giveitem w_brifle_03          - Sonic Carbine
+giveitem w_brifle_04          - Blaster Rifle
+giveitem w_brifle_05          - Bowcaster
+giveitem w_brifle_06          - Repeating Blaster Carbine
+giveitem w_brifle_07          - Ion Rifle
+giveitem w_brifle_08          - Disruptor Carbine
+giveitem w_brifle_09          - Sonic Rifle
+giveitem w_brifle_10          - Repeating Blaster Rifle
+giveitem w_brifle_11          - War Bowcaster
+giveitem w_brifle_12          - Arkanian Blaster Rifle
+giveitem w_brifle_13          - Disruptor Rifle
+giveitem w_brifle_14          - Argazdan Riot Buster
+giveitem w_brifle_15          - Bothan Droid Disruptor
+giveitem w_brifle_16          - Combat Enforcer
+giveitem w_brifle_17          - Heavy Repeating Carbine
+giveitem w_brifle_18          - Plasma Projector
+giveitem w_brifle_19          - Mandalorian Assault Rifle
+giveitem w_brifle_20          - Verpine Droid Disruptor
+giveitem w_brifle_21          - Ceremonial Bowcaster
+giveitem w_brifle_22          - Heavy Repeating Rifle
+giveitem w_brifle_23          - Charric
+giveitem w_brifle_24          - Zabrak Blaster Carbine
+giveitem w_brifle_25          - Slavemaster Stun Carbine
+giveitem w_brifle_26          - Onderon Repeating Carbine
+giveitem w_brifle_27          - Sonic Disruptor
+giveitem w_brifle_28          - Mandalorian Heavy Repeater
+giveitem w_brifle_29          - Verpine Droid Disintegrator
+giveitem w_brifle_30          - Zersium Rifle
+
+====================================================================
+MELEE WEAPONS
+====================================================================
+giveitem w_melee_01           - Short Sword
+giveitem w_melee_02           - Long Sword
+giveitem w_melee_03           - Energy Baton
+giveitem w_melee_04           - Quarterstaff
+giveitem w_melee_05           - Vibroblade
+giveitem w_melee_06           - Vibrosword
+giveitem w_melee_07           - Double-Bladed Sword
+giveitem w_melee_08           - Exchange Negotiator
+giveitem w_melee_09           - Gamorrean War Axe
+giveitem w_melee_10           - Zabrak Vibroblade
+giveitem w_melee_11           - Rodian Blade
+giveitem w_melee_12           - Sith War Sword
+giveitem w_melee_13           - Trandoshan Sword
+giveitem w_melee_14           - Force Pike
+giveitem w_melee_15           - Vibro Double-Blade
+giveitem w_melee_16           - Gamorrean Cleaver
+giveitem w_melee_17           - Rodian Death Blade
+giveitem w_melee_18           - Gand Silencer
+giveitem w_melee_19           - Ryyk Blade
+giveitem w_melee_20           - Trandoshan Double-Blade
+giveitem w_melee_21           - Echani Vibrosword
+giveitem w_melee_22           - Sith Tremor Sword
+giveitem w_melee_23           - Gand Shockstaff
+giveitem w_melee_24           - Shyarn
+giveitem w_melee_25           - Arg'garok
+giveitem w_melee_26           - Geonosian Electro-Staff
+giveitem w_melee_27           - Tehk'la Blade
+giveitem w_melee_28           - Zhaboka
+giveitem w_melee_29           - Gand Discharger
+giveitem w_melee_30           - Freyyr's Warblade
+giveitem w_melee_x01          - Handmaiden's Staff
+giveitem w_melee_x02          - Twi'lek Spinning Blade
+giveitem w_melee_x03          - Twi'lek Spinning Blade
+giveitem w_melee_x12          - Ludo Kressh's War Sword
+
+====================================================================
+BLASTER SCOPES
+====================================================================
+giveitem u_r_targ_01          - Pinpoint Scope Mark I
+giveitem u_r_targ_02          - Accuracy Scope Mark I
+giveitem u_r_targ_03          - Targeting Scope Mark I
+giveitem u_r_targ_04          - Crippling Scope Mark I
+giveitem u_r_targ_05          - Pinpoint Scope Mark II
+giveitem u_r_targ_06          - Accuracy Scope Mark II
+giveitem u_r_targ_07          - Targeting Scope Mark II
+giveitem u_r_targ_08          - Crippling Scope Mark II
+giveitem u_r_targ_09          - Pinpoint Scope Mark III
+giveitem u_r_targ_10          - Accuracy Scope Mark III
+giveitem u_r_targ_11          - Targeting Scope Mark III
+giveitem u_r_targ_12          - Crippling Scope Mark III
+giveitem u_r_targ_13          - Pinpoint Scope Mark IV
+giveitem u_r_targ_14          - Accuracy Scope Mark IV
+giveitem u_r_targ_15          - Targeting Scope Mark IV
+
+====================================================================
+BLASTER FIRING CHAMBERS
+====================================================================
+giveitem u_r_firi_01          - Broadening Chamber Mark I
+giveitem u_r_firi_02          - Amplifying Chamber Mark I
+giveitem u_r_firi_03          - Precision Chamber Mark I
+giveitem u_r_firi_04          - Beam Splitter Mark I
+giveitem u_r_firi_05          - Mandalorian Chamber Mark I
+giveitem u_r_firi_06          - Broadened Chamber Mark II
+giveitem u_r_firi_07          - Amplifying Chamber Mark II
+giveitem u_r_firi_08          - Precision Chamber Mark II
+giveitem u_r_firi_09          - Beam Splitter Mark II
+giveitem u_r_firi_10          - Mandalorian Chamber Mark II
+giveitem u_r_firi_11          - Broadened Chamber Mark III
+giveitem u_r_firi_12          - Amplifying Chamber Mark III
+giveitem u_r_firi_13          - Precision Chamber Mark III
+giveitem u_r_firi_14          - Beam Splitter Mark III
+giveitem u_r_firi_15          - Mandalorian Chamber Mark III
+
+====================================================================
+BLASTER POWER CELLS
+====================================================================
+giveitem u_r_powe_01          - Ion Charger Mark I
+giveitem u_r_powe_02          - Power Pulsator Mark I
+giveitem u_r_powe_03          - Basic Rylith Power Cell
+giveitem u_r_powe_04          - Ion Charger Mark II
+giveitem u_r_powe_05          - Power Pulsator Mark II
+giveitem u_r_powe_06          - Standard Rylith Power Cell
+giveitem u_r_powe_07          - Ion Charger Mark III
+giveitem u_r_powe_08          - Power Pulsator Mark III
+giveitem u_r_powe_09          - Advanced Rylith Power Cell
+giveitem u_r_powe_10          - Ion Charger Mark IV
+giveitem u_r_powe_11          - Power Pulsator Mark IV
+giveitem u_r_powe_12          - Superior Rylith Power Cell
+giveitem u_r_powe_13          - Ion Charger Mark V
+giveitem u_r_powe_14          - Power Pulsator Mark V
+giveitem u_r_powe_15          - Pure Rylith Power Cell
+
+====================================================================
+BELTS
+====================================================================
+giveitem a_belt_01            - Adrenaline Amplifier
+giveitem a_belt_02            - Cardio-Regulator
+giveitem a_belt_03            - Stealth Field Generator
+giveitem a_belt_04            - Czerka Utility Belt
+giveitem a_belt_05            - Advanced Adrenaline Amplifier
+giveitem a_belt_06            - Aratech SD Belt
+giveitem a_belt_07            - Strength Enhancer
+giveitem a_belt_08            - Systech Cardio-Regulator
+giveitem a_belt_09            - Hyper Adrenaline Amplifier
+giveitem a_belt_10            - Exchange Shadow Caster
+giveitem a_belt_11            - Inertial Inhibitor
+giveitem a_belt_12            - Electrical Capacitance Shield
+giveitem a_belt_13            - Thermal Shield Generator
+giveitem a_belt_14            - Eriadu Stealth Unit
+giveitem a_belt_15            - CNS Strength Enhancer
+giveitem a_belt_16            - Exchange Utility Belt
+giveitem a_belt_17            - Immunity Belt
+giveitem a_belt_18            - Adrenaline Stimulator
+giveitem a_belt_19            - Nerve Amplifier Belt
+giveitem a_belt_20            - Jal Shey Belt
+giveitem a_belt_21            - Multishield Generator
+giveitem a_belt_22            - Defel Mimicker
+giveitem a_belt_23            - Frozian Scout Belt
+giveitem a_belt_24            - Tech Specialist Belt
+giveitem a_belt_25            - Aratech Cardio-Regulator
+giveitem a_belt_26            - GNS Strength Enhancer
+giveitem a_belt_27            - Qel-Droma Belt
+giveitem a_belt_28            - Immortality Belt
+giveitem a_belt_29            - Aratech Echo Belt
+giveitem a_belt_30            - Jal Shey Mentor Belt
+
+====================================================================
+HEADGEAR
+====================================================================
+giveitem a_helmet_01          - Neural Band
+giveitem a_helmet_02          - Breath Mask
+giveitem a_helmet_03          - Rakatan Band
+giveitem a_helmet_04          - Stealth Field Enhancer
+giveitem a_helmet_05          - Bothan Perception Visor
+giveitem a_helmet_06          - Sonic Nullifiers
+giveitem a_helmet_07          - Interface Band
+giveitem a_helmet_08          - Targeting Visor
+giveitem a_helmet_09          - Shielding Visor
+giveitem a_helmet_10          - Spacer's Sensor
+giveitem a_helmet_11          - Regal Visor
+giveitem a_helmet_12          - Meditation Band
+giveitem a_helmet_13          - Bothan Sensory Visor
+giveitem a_helmet_14          - Arkanian Blinders
+giveitem a_helmet_15          - Combat Sensor
+giveitem a_helmet_16          - Multi-spectral Target Assessor
+giveitem a_helmet_17          - Consciousness Helm
+giveitem a_helmet_18          - Rebreather Mask
+giveitem a_helmet_19          - Das'skar Hunting Mask
+giveitem a_helmet_20          - Force Mask
+giveitem a_helmet_21          - Sith Mask
+giveitem a_helmet_22          - Stabilizer Mask
+giveitem a_helmet_23          - Matukai Meditation Band
+giveitem a_helmet_24          - Target Assessor
+giveitem a_helmet_25          - Circlet of Saresh
+giveitem a_helmet_26          - Bindo's Band
+giveitem a_helmet_27          - Enchanced Shielding Visor
+giveitem a_helmet_28          - Force Shield
+giveitem a_helmet_29          - Absorption Visor
+giveitem a_helmet_30          - Force Focusing Visor
+
+====================================================================
+GLOVES & GAUNTLETS
+====================================================================
+giveitem a_gloves_01          - Insulated Gloves
+giveitem a_gloves_02          - Exchange Casual Gloves
+giveitem a_gloves_04          - Taris Survival Gloves
+giveitem a_gloves_05          - Accuracy Gloves
+giveitem a_gloves_06          - Gamorrean Gauntlets
+giveitem a_gloves_07          - Exchange Work Gloves
+giveitem a_gloves_08          - Czerka Defensive Gauntlets
+giveitem a_gloves_09          - Detonator Gloves
+giveitem a_gloves_10          - Unarmed Accuracy Gloves
+giveitem a_gloves_11          - Infiltrator Gloves
+giveitem a_gloves_12          - Jal Shey Perception Gloves
+giveitem a_gloves_13          - Gamorrean Wargloves
+giveitem a_gloves_14          - Eriadu Strength Amplifier
+giveitem a_gloves_15          - Karakan Gauntlets
+giveitem a_gloves_16          - Bothan Precision Gloves
+giveitem a_gloves_17          - Sith Power Gauntlets
+giveitem a_gloves_18          - Gamorrean Power Gauntlets
+giveitem a_gloves_19          - Nagai Combat Gloves
+giveitem a_gloves_20          - Kubaz Scoundrel Gloves
+giveitem a_gloves_21          - Automation Gloves
+giveitem a_gloves_22          - Jal Shey Meditation Gloves
+giveitem a_gloves_23          - Echani Accuracy Gloves
+giveitem a_gloves_24          - Zeison Sha Gloves
+giveitem a_gloves_25          - Dominator Gauntlets
+giveitem a_gloves_26          - Nikto Soldier Gloves
+giveitem a_gloves_27          - Ossluk's Gloves
+giveitem a_gloves_28          - Disruption Gloves
+giveitem a_gloves_29          - Improved Automation Gloves
+giveitem a_gloves_30          - Lightning Gloves
+
+====================================================================
+TIER 1 IMPLANTS (BASE CONSTITUTION 12+)
+====================================================================
+giveitem e_imp1_01            - Reflex Package
+giveitem e_imp1_02            - Pheromone Package
+giveitem e_imp1_03            - Cardio Package
+giveitem e_imp1_04            - Strength Package
+giveitem e_imp1_05            - Response Package
+giveitem e_imp1_06            - Fitness Package
+giveitem e_imp1_07            - Skills Package
+giveitem e_imp1_08            - Health Package
+giveitem e_imp1_09            - Physical Boost Package
+giveitem e_imp1_10            - Mental Boost Package
+
+====================================================================
+TIER 2 IMPLANTS (BASE CONSTITUTION 14+)
+====================================================================
+giveitem e_imp2_01            - Retinal Combat Implant
+giveitem e_imp2_02            - Lornan Implant
+giveitem e_imp2_03            - Biotech Implant
+giveitem e_imp2_04            - Power Implant
+giveitem e_imp2_05            - Alacrity Implant
+giveitem e_imp2_06            - Insight Implant
+giveitem e_imp2_07            - Skills Implant
+giveitem e_imp2_08            - Durability Implant
+giveitem e_imp2_09            - Physical Boost Implant
+giveitem e_imp2_10            - Mental Boost Implant
+
+====================================================================
+TIER 3 IMPLANTS (BASE CONSTITUTION 16+)
+====================================================================
+giveitem e_imp3_01            - Bio-Antidote System
+giveitem e_imp3_02            - Nerve Enhancement System
+giveitem e_imp3_03            - Reaction System
+giveitem e_imp3_04            - Advanced Combat System
+giveitem e_imp3_05            - Bavakar Strength System
+giveitem e_imp3_06            - Cardio Power System
+giveitem e_imp3_07            - Skills System
+giveitem e_imp3_08            - Numbness System
+giveitem e_imp3_09            - Physical Boost System
+giveitem e_imp3_10            - Mental Boost System
+
+====================================================================
+TIER 4 IMPLANTS (BASE CONSTITUTION 18+)
+====================================================================
+giveitem e_imp4_01            - Strength D-Package
+giveitem e_imp4_02            - Immunity D-Package
+giveitem e_imp4_03            - Perception D-Package
+giveitem e_imp4_04            - Enhancement D-Package
+giveitem e_imp4_05            - Immortality D-Package
+giveitem e_imp4_06            - Quickness D-Package
+giveitem e_imp4_07            - Skills D-Package
+giveitem e_imp4_08            - Universal D-Package
+giveitem e_imp4_09            - Physical Boost D-Package
+giveitem e_imp4_10            - Mental Boost D-Package
+
+====================================================================
+ENERGY SHIELDS & ARMBANDS
+====================================================================
+giveitem a_band_c01           - <FullName>'s Armband
+giveitem a_band_x01           - Nomi's Armband
+giveitem a_band_x02           - Vao Armband
+giveitem a_band_x03           - Ludo Kressh's Armband
+giveitem a_shield_01          - Energy Shield
+giveitem a_shield_02          - Mandalorian Melee Shield
+giveitem a_shield_03          - Arkanian Energy Shield
+giveitem a_shield_04          - Echani Shield
+giveitem a_shield_05          - Mandalorian Power Shield
+giveitem a_shield_06          - Echani Dueling Shield
+giveitem a_shield_07          - Verpine Prototype Shield
+
+====================================================================
 GRENADES & THERMAL DETONATORS
---------------------------------------------------------------------
-giveitem g_w_grenade01    - Frag Grenade
-giveitem g_w_grenade02    - Concussion Grenade
-giveitem g_w_grenade03    - Ion Grenade
-giveitem g_w_grenade04    - Sonic Grenade
-giveitem g_w_grenade05    - Plasma Grenade
-giveitem g_w_grenade06    - Poison Grenade
-giveitem g_w_grenade07    - Flashbang Grenade
-giveitem g_w_grenade08    - Thermal Detonator
-giveitem g_w_grenade09    - CryoBan Grenade
-giveitem g_w_grenade10    - Adhesive Grenade
-
---------------------------------------------------------------------
-EXPLOSIVE MINES
---------------------------------------------------------------------
-giveitem g_i_mine01       - Minor Frag Mine
-giveitem g_i_mine02       - Average Frag Mine
-giveitem g_i_mine03       - Deadly Frag Mine
-giveitem g_i_mine04       - Minor Plasma Mine
-giveitem g_i_mine05       - Average Plasma Mine
-giveitem g_i_mine06       - Deadly Plasma Mine
-giveitem g_i_mine07       - Minor Gas Mine
-giveitem g_i_mine08       - Average Gas Mine
-giveitem g_i_mine09       - Deadly Gas Mine
-giveitem g_i_mine10       - Minor Flash Mine
-giveitem g_i_mine11       - Average Flash Mine
-giveitem g_i_mine12       - Deadly Flash Mine
-giveitem g_i_mine13       - Minor Sonic Mine
-giveitem g_i_mine14       - Average Sonic Mine
-giveitem g_i_mine15       - Deadly Sonic Mine
-
---------------------------------------------------------------------
-MELEE WEAPON EDGES & VIBRO BLADES (u_m_edge_01 to 11)
---------------------------------------------------------------------
-giveitem u_m_edge_01      - Vibration Cell Mark I
-giveitem u_m_edge_02      - Vibration Cell Mark II
-giveitem u_m_edge_03      - Vibration Cell Mark III
-giveitem u_m_edge_04      - Ion Edge Mark I
-giveitem u_m_edge_05      - Ion Edge Mark II
-giveitem u_m_edge_06      - Ion Edge Mark III
-giveitem u_m_edge_07      - Plasma Edge Mark I
-giveitem u_m_edge_08      - Plasma Edge Mark II
-giveitem u_m_edge_09      - Plasma Edge Mark III
-giveitem u_m_edge_10      - Sonic Edge Mark I
-giveitem u_m_edge_11      - Sonic Edge Mark II
-
---------------------------------------------------------------------
-MELEE WEAPON GRIPS (u_m_grip_01 to 09)
---------------------------------------------------------------------
-giveitem u_m_grip_01      - Basic Vibro Grip
-giveitem u_m_grip_02      - Balanced Grip Mark I
-giveitem u_m_grip_03      - Balanced Grip Mark II
-giveitem u_m_grip_04      - Balanced Grip Mark III
-giveitem u_m_grip_05      - Weighted Grip Mark I
-giveitem u_m_grip_06      - Weighted Grip Mark II
-giveitem u_m_grip_07      - Weighted Grip Mark III
-giveitem u_m_grip_08      - Contoured Grip Mark I
-giveitem u_m_grip_09      - Contoured Grip Mark II
+====================================================================
+giveitem g_w_adhsvgren001     - Adhesive Grenade
+giveitem g_w_cryobgren001     - CryoBan Grenade
+giveitem g_w_firegren001      - Plasma Grenade
+giveitem g_w_fraggren01       - Frag Grenade
+giveitem g_w_iongren01        - Ion Grenade
+giveitem g_w_poisngren01      - Poison Grenade
+giveitem g_w_sonicgren01      - Sonic Grenade
+giveitem g_w_stungren01       - Concussion Grenade
+giveitem g_w_thermldet01      - Thermal Detonator
 
 ====================================================================
-PAZAAK CARDS AND PLANET WARP MODULE CODES
+MINES
 ====================================================================
-This final block contains the complete asset codes for constructing
-a Pazaak deck, followed by the master travel codes to instantly teleport.
+giveitem g_i_trapkit001       - Minor Flash Mine
+giveitem g_i_trapkit002       - Average Flash Mine
+giveitem g_i_trapkit003       - Blinding Flash Mine
+giveitem g_i_trapkit004       - Minor Frag Mine
+giveitem g_i_trapkit005       - Average Frag Mine
+giveitem g_i_trapkit006       - Deadly Frag Mine
+giveitem g_i_trapkit007       - Minor Plasma Mine
+giveitem g_i_trapkit008       - Average Plasma Mine
+giveitem g_i_trapkit009       - Deadly Plasma Mine
+giveitem g_i_trapkit010       - Minor Gas Mine
+giveitem g_i_trapkit011       - Average Gas Mine
+giveitem g_i_trapkit012       - Deadly Gas Mine
+giveitem g_i_trapkit013       - Minor Sonic Mine
+giveitem g_i_trapkit014       - Average Sonic Mine
+giveitem g_i_trapkit015       - Deadly Sonic Mine
+giveitem g_i_trapkit016       - Strong Flash Mine
+giveitem g_i_trapkit017       - Devastating Flash Mine
+giveitem g_i_trapkit018       - Strong Frag Mine
+giveitem g_i_trapkit019       - Devastating Frag Mine
+giveitem g_i_trapkit020       - Strong Plasma Mine
+giveitem g_i_trapkit021       - Devastating Plasma Mine
+giveitem g_i_trapkit022       - Strong Gas Mine
+giveitem g_i_trapkit023       - Devastating Gas Mine
+giveitem g_i_trapkit024       - Strong Sonic Mine
+giveitem g_i_trapkit025       - Devastating Sonic Mine
 
-To spawn Pazaak cards, use: giveitem [code]
-To teleport your party, use: warp [module_code]
+====================================================================
+MELEE WEAPON EDGES
+====================================================================
+giveitem u_m_edge_01          - Mild Devaronian Edge
+giveitem u_m_edge_02          - Basic Ionite Edge
+giveitem u_m_edge_03          - Basic Mullinine Edge
+giveitem u_m_edge_04          - Basic Neutronium Edge
+giveitem u_m_edge_05          - Moderate Devaronian Edge
+giveitem u_m_edge_06          - Improved Ionite Edge
+giveitem u_m_edge_07          - Improved Mullinine Edge
+giveitem u_m_edge_08          - Improved Neutronium Edge
+giveitem u_m_edge_09          - Severe Devaronian Edge
+giveitem u_m_edge_10          - Superior Ionite Edge
+giveitem u_m_edge_11          - Superior Mullinine Edge
+giveitem u_m_edge_12          - Superior Neutronium Edge
+giveitem u_m_edge_13          - Deadly Devaronian Edge
+giveitem u_m_edge_14          - Quadranium Edge
+giveitem u_m_edge_15          - Ostrine Edge
 
---------------------------------------------------------------------
-PAZAAK CARD ITEM CODES (g_i_pazcard_001 to 026)
---------------------------------------------------------------------
-giveitem g_i_pazcard_001  - Plus 1 Card (+1)
-giveitem g_i_pazcard_002  - Plus 2 Card (+2)
-giveitem g_i_pazcard_003  - Plus 3 Card (+3)
-giveitem g_i_pazcard_004  - Plus 4 Card (+4)
-giveitem g_i_pazcard_005  - Plus 5 Card (+5)
-giveitem g_i_pazcard_006  - Plus 6 Card (+6)
-giveitem g_i_pazcard_007  - Minus 1 Card (-1)
-giveitem g_i_pazcard_008  - Minus 2 Card (-2)
-giveitem g_i_pazcard_009  - Minus 3 Card (-3)
-giveitem g_i_pazcard_010  - Minus 4 Card (-4)
-giveitem g_i_pazcard_011  - Minus 5 Card (-5)
-giveitem g_i_pazcard_012  - Minus 6 Card (-6)
-giveitem g_i_pazcard_013  - Plus/Minus 1 Card (+/-1)
-giveitem g_i_pazcard_014  - Plus/Minus 2 Card (+/-2)
-giveitem g_i_pazcard_015  - Plus/Minus 3 Card (+/-3)
-giveitem g_i_pazcard_016  - Plus/Minus 4 Card (+/-4)
-giveitem g_i_pazcard_017  - Plus/Minus 5 Card (+/-5)
-giveitem g_i_pazcard_018  - Plus/Minus 6 Card (+/-6)
-giveitem g_i_pazcard_019  - Flip 1 & 2 Card
-giveitem g_i_pazcard_020  - Flip 3 & 4 Card
-giveitem g_i_pazcard_021  - Flip 5 & 6 Card
-giveitem g_i_pazcard_022  - Double Card
-giveitem g_i_pazcard_023  - Tie-Breaker Card
-giveitem g_i_pazcard_024  - +1/-1 Hand Card
-giveitem g_i_pazcard_025  - 1T Card
-giveitem g_i_pazcard_026  - 2 & 4 Flip Card
+====================================================================
+MELEE WEAPON GRIPS
+====================================================================
+giveitem u_m_grip_01          - Agrinium Grip
+giveitem u_m_grip_02          - Contoured Grip
+giveitem u_m_grip_03          - Zabrak Grip
+giveitem u_m_grip_04          - Basket Hilt
+giveitem u_m_grip_05          - Nagai Grip
+giveitem u_m_grip_06          - Advanced Agrinium Grip
+giveitem u_m_grip_07          - Advanced Contoured Grip
+giveitem u_m_grip_08          - Advanced Zabrak Grip
+giveitem u_m_grip_09          - Advanced Basket Hilt
+giveitem u_m_grip_10          - Advanced Nagai Grip
+giveitem u_m_grip_11          - Superior Agrinium Grip
+giveitem u_m_grip_12          - Superior Contoured Grip
+giveitem u_m_grip_13          - Superior Zabrak Grip
+giveitem u_m_grip_14          - Superior Basket Hilt
+giveitem u_m_grip_15          - Superior Nagai Grip
 
---------------------------------------------------------------------
-PLANET WARP MODULE CODES (Usage: warp [module_code])
---------------------------------------------------------------------
--- EBON HAWK & PROLOGUE --
-warp 001EBO               - Prologue: Ebon Hawk Interior
-warp 002EBO               - Prologue: Ebon Hawk Exterior
-warp 003EBO               - Ebon Hawk Interior (Standard Setup)
-warp 004EBO               - Ebon Hawk Interior (Redux / Red Cliff scene)
+====================================================================
+PAZAAK CARDS
+====================================================================
+giveitem g_i_pazcard_001      - Pazaak Card +1
+giveitem g_i_pazcard_002      - Pazaak Card +2
+giveitem g_i_pazcard_003      - Pazaak Card +3
+giveitem g_i_pazcard_004      - Pazaak Card +4
+giveitem g_i_pazcard_005      - Pazaak Card +5
+giveitem g_i_pazcard_006      - Pazaak Card +6
+giveitem g_i_pazcard_007      - Pazaak Card -1
+giveitem g_i_pazcard_008      - Pazaak Card -2
+giveitem g_i_pazcard_009      - Pazaak Card -3
+giveitem g_i_pazcard_010      - Pazaak Card -4
+giveitem g_i_pazcard_011      - Pazaak Card -5
+giveitem g_i_pazcard_012      - Pazaak Card -6
+giveitem g_i_pazcard_013      - Pazaak Card +/-1
+giveitem g_i_pazcard_014      - Pazaak Card +/-2
+giveitem g_i_pazcard_015      - Pazaak Card +/-3
+giveitem g_i_pazcard_016      - Pazaak Card +/-4
+giveitem g_i_pazcard_017      - Pazaak Card +/-5
+giveitem g_i_pazcard_018      - Pazaak Card +/-6
+giveitem g_i_pazcard_019      - Pazaak Card +/- 1/2
+giveitem g_i_pazcard_020      - Pazaak Card Double
+giveitem g_i_pazcard_021      - Pazaak Card Tie Breaker
+giveitem g_i_pazcard_022      - Pazaak Card Flip 2&4
+giveitem g_i_pazcard_023      - Pazaak Card Flip 3&6
 
--- PERAGUS MINING FACILITY --
-warp 101PER               - Peragus: Administration Level
-warp 102PER               - Peragus: Mining Tunnels
-warp 103PER               - Peragus: Fuel Depot
-warp 104PER               - Peragus: Asteroid Exterior (Space Suit Walk)
-warp 105PER               - Peragus: Dormitories
-warp 106PER               - Peragus: Hangar Bay (Harbinger Dock)
-warp 151PER               - Harbinger: Command Deck
-warp 152PER               - Harbinger: Crew Quarters
-warp 153PER               - Harbinger: Engine Deck
+====================================================================
+PLANET WARP MODULE CODES
+====================================================================
+Use a separate save before warping: travel can bypass quest triggers.
+Repeated area names can represent different story variants.
+004EBO is the Red Eclipse invasion variant; 511OND is an invasion area.
 
--- CITADEL STATION & TELOS SURFACE --
-warp 201TEL               - Citadel Station: Entertainment Module 081
-warp 202TEL               - Citadel Station: Cantina
-warp 203TEL               - Citadel Station: Residential Module 082
-warp 204TEL               - Citadel Station: Residential Module East
-warp 221TEL               - Telos: Underground Military Base
-warp 222TEL               - Telos: Sub-Level Base Tunnels
-warp 261TEL               - Telos: Polar Ice Cap Plateau
-warp 262TEL               - Telos: Hidden Jedi Academy
+-- EBO --
+warp 001EBO                   - Ebon Hawk - Interior
+warp 002EBO                   - Ebon Hawk - Exterior Hull
+warp 003EBO                   - Ebon Hawk - Interior
+warp 004EBO                   - Ebon Hawk - Interior
 
--- DANTOOINE --
-warp 601DAN               - Dantooine: Khoonda Courtyard
-warp 602DAN               - Dantooine: Khoonda Administrative Plains
-warp 605DAN               - Dantooine: Enclave Courtyard Ruins
-warp 610DAN               - Dantooine: Enclave Sublevel
+-- PER --
+warp 101PER                   - Peragus - Administration Level
+warp 102PER                   - Peragus - Mining Tunnels
+warp 103PER                   - Peragus - Fuel Depot
+warp 104PER                   - Peragus - Asteroid Exterior
+warp 105PER                   - Peragus - Dormitories
+warp 106PER                   - Peragus - Hangar Bay
 
--- NAR SHADDAA --
-warp 301NAR               - Nar Shaddaa: Refugee Landing Pad
-warp 302NAR               - Nar Shaddaa: Refugee Sector
-warp 303NAR               - Nar Shaddaa: Docks
-warp 304NAR               - Nar Shaddaa: Jekk'Jekk Tarr Bar
-warp 305NAR               - Nar Shaddaa: Jekk'Jekk Tarr Tunnels
-warp 351NAR               - Nar Shaddaa: G0-T0's Yacht
+-- HAR --
+warp 151HAR                   - Harbinger - Command Deck
+warp 152HAR                   - Harbinger - Crew Quarters
+warp 153HAR                   - Harbinger - Engine Deck
 
--- DXUN & ONDERON --
-warp 401DXN               - Dxun: Jungle Landing Site
-warp 402DXN               - Dxun: Mandalorian Jungle Camp
-warp 411DXN               - Dxun: Sith Tomb / Ancient Ruins
-warp 501OND               - Onderon: Iziz Spaceport
-warp 502OND               - Onderon: Merchant Quarter
-warp 503OND               - Onderon: Iziz Cantina
-warp 511OND               - Onderon: Iziz Royal Palace
+-- TEL --
+warp 201TEL                   - Citadel Station - Dock Module
+warp 202TEL                   - Citadel Station - Entertainment
+warp 203TEL                   - Citadel Station - Residential 082 East
+warp 204TEL                   - Citadel Station - Residential 082 West
+warp 207TEL                   - Citadel Station - Cantina
+warp 221TEL                   - Citadel Station - Suburban
+warp 222TEL                   - Citadel Station - Entertainment Module 081
+warp 232TEL                   - Telos - Underground Base
+warp 261TEL                   - Telos - Polar Plateau
+warp 262TEL                   - Telos - Secret Academy
 
--- KORRIBAN --
-warp 701KOR               - Korriban: Valley of the Dark Lords
-warp 702KOR               - Korriban: Sith Academy Ruins
-warp 711KOR               - Korriban: Secret Shyrack Cave / Tomb
+-- DAN --
+warp 601DAN                   - Dantooine - Khoonda Plains
+warp 602DAN                   - Dantooine - Khoonda
+warp 605DAN                   - Dantooine - Enclave Courtyard
+warp 610DAN                   - Dantooine - Enclave Sublevel
 
--- MALACHOR V (ENDGAME) --
-warp 901MAL               - Malachor V: Surface Plains
-warp 902MAL               - Malachor V: Depths / Canyon
-warp 903MAL               - Malachor V: Trayus Academy Entrance
-warp 904MAL               - Malachor V: Trayus Core (Final Battle Area)
+-- NAR --
+warp 301NAR                   - Nar Shaddaa - Refugee Landing Pad
+warp 302NAR                   - Nar Shaddaa - Refugee Quad
+warp 303NAR                   - Nar Shaddaa - Docks
+warp 304NAR                   - Nar Shaddaa - Jekk'Jekk Tarr
+warp 305NAR                   - Nar Shaddaa - Jekk'Jekk Tarr Tunnels
+warp 351NAR                   - Nar Shaddaa - Goto's Yacht
+
+-- DXN --
+warp 401DXN                   - Dxun - Jungle Landing
+warp 402DXN                   - Dxun - Jungle
+warp 403DXN                   - Dxun - Mandalorian Ruins
+warp 411DXN                   - Dxun - Sith Tomb
+
+-- OND --
+warp 501OND                   - Onderon - Iziz Spaceport
+warp 502OND                   - Onderon - Merchant Quarter
+warp 503OND                   - Onderon - Iziz Cantina
+warp 506OND                   - Onderon - Royal Palace
+warp 511OND                   - Merchant Quarter
+
+-- KOR --
+warp 701KOR                   - Korriban - Valley of Dark Lords
+warp 702KOR                   - Korriban - Sith Academy
+warp 710KOR                   - Korriban - Shyrack Cave
+warp 711KOR                   - Korriban - Secret Tomb
+
+-- MAL --
+warp 901MAL                   - Malachor V - Surface
+warp 902MAL                   - Malachor V - Depths
+warp 903MAL                   - Malachor V - Trayus Academy
+warp 904MAL                   - Malachor V - Trayus Core
